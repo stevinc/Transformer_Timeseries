@@ -1,0 +1,42 @@
+batch_first: true
+batch_size: 64
+train_samples: 10000
+test_samples: 1000
+val_samples: 1000
+category_counts:
+- 7
+- 31
+- 53
+- 12
+- 4
+device: cuda
+dropout_rate: 0.3
+ds_name: volatility
+early_stopping_patience: 5
+hidden_layer_size: 160
+input_obs_loc:
+- 0
+input_size: 8
+known_categorical_inputs:
+- 0
+- 1
+- 2
+- 3
+- 4
+known_regular_inputs:
+- 2
+lr: 0.0001
+max_gradient_norm: 0.01
+n_workers: 0
+num_encoder_steps: 252
+num_epochs: 100
+num_heads: 1
+output_size: 1
+quantiles:
+- 0.1
+- 0.5
+- 0.9
+stack_size: 1
+static_input_loc:
+- 7
+total_time_steps: 257

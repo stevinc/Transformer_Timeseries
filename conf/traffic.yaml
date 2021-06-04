@@ -1,0 +1,64 @@
+# Hyper Params
+batch_size: 128
+device: cuda
+lr: 0.001
+num_epochs: 100
+n_workers: 0
+model: tf_transformer
+
+# Dataset
+ds_name: traffic
+train_samples: 10000
+test_samples: 1000
+val_samples: 1000
+input_size: 5
+output_size: 1
+total_time_steps: 192
+num_encoder_steps: 168
+static_input_loc:
+- 4
+input_obs_loc:
+- 0
+known_categorical_inputs:
+- 0
+known_regular_inputs:
+- 1
+- 2
+- 3
+category_counts:
+- 963
+
+# Model Temporal Fusion Transformer
+quantiles:
+- 0.1
+- 0.5
+- 0.9
+batch_first: true
+early_stopping_patience: 5
+hidden_layer_size: 320
+stack_size: 1
+dropout_rate: 0.3
+max_gradient_norm: 100.0
+num_heads: 4
+multiprocessing_workers: 5
+
+# Model Transformer
+d_model: 64
+q: 16
+v: 16
+h: 4
+N: 2
+attention_size: 0
+dropout: 0.1
+pe: original
+chunk_mode: None
+d_input: 5
+d_output: 3
+
+
+
+
+
+
+
+
