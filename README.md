@@ -3,8 +3,9 @@ Time series forecasting models
 
 ## Set-up
 
-- Install the required packages
+- Install the required packages (pip or conda)
     - `pip install -r requirements.txt`
+    - `conda env create -f env.yml`
 
 - Download data
     - https://drive.google.com/file/d/1Na7e2yJy1Oix8-HcKQS97u1VZodpZ-OZ/view?usp=sharing
