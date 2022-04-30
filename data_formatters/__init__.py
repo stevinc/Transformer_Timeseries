@@ -14,4 +14,4 @@
 # limitations under the License.
 
 from data_formatters.utils import make_data_formatter, csv_path_to_folder
-from data_formatters import volatility, electricity, favorita, traffic, ima
+from data_formatters import volatility, electricity, favorita, traffic
