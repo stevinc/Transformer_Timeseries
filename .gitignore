@@ -17,6 +17,9 @@ log/*
 ### Dataset
 data/*
 
+### Temp files
+tmp/*
+
 ### images
 *.jpg
 *.jpeg
